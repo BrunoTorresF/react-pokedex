@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from 'react-bootstrap/Card';
-import './PokemonCard.scss';
+
 // /(?<=\/)\d+(?=\/)/
 // /(?<=\/)\d+/
 const PokemonCard = ({ name, url }) => {

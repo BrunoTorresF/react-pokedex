@@ -3,7 +3,6 @@ import React, { Fragment } from 'react';
 import { hot } from 'react-hot-loader';
 import Header from './components/Header';
 import Pokedex from './containers/Pokedex';
-import './App.scss';
 
 const App = () => (
   <>
