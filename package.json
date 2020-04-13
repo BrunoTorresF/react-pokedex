@@ -1,9 +1,9 @@
 {
-  "name": "react-boilerplate",
+  "name": "react-pokedex",
   "version": "1.0.0",
-  "description": "Modern React boilerplate",
+  "description": "Pokemon SPA",
   "main": "index.js",
-  "repository": "https://github.com/BrunoTorresF/react-boilerplate",
+  "repository": "https://github.com/BrunoTorresF/react-pokedex",
   "author": "Bruno Torres",
   "license": "MIT",
   "scripts": {
