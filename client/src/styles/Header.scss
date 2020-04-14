@@ -1,0 +1,19 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.25rem auto;
+}
+
+.headerImg {
+  max-width: 3rem;
+  margin-right: 1.75rem;
+  flex: 1;
+}
+
+.headerBanner {
+  & > h1 {
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+}

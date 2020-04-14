@@ -1,0 +1,14 @@
+.pokecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokenav {
+  display: flex;
+  flex: 1;
+}
+
+.navText {
+  margin: 0 1.5rem;
+}

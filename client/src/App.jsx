@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 // RHL only for front end development
 import { hot } from 'react-hot-loader';
 import Header from './components/Header';
 import Pokedex from './containers/Pokedex';
+import './styles/App.scss';
 
 const App = () => (
   <>

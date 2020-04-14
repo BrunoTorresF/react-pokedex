@@ -6,50 +6,48 @@ module.exports = {
   entry: ['./client/src/Index.js'],
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname, 'client/dist')
+    path: path.join(__dirname, 'client/dist'),
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         use: ['babel-loader'],
-        exclude: /node_modules|packages/
+        exclude: /node_modules|packages/,
       },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: ['eslint-loader']
+        use: ['eslint-loader'],
       },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
           {
             loader: 'style-loader',
-            options: {
-              hmr: true
-            }
           },
           {
             loader: 'css-loader',
             options: {
               modules: true,
               importLoaders: 1,
-              localIdentName: '[name]__[local]___[hash:base64:5]'
-            }
+            },
           },
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [require('autoprefixer')]
-            }
+              plugins: () => [require('autoprefixer')],
+            },
           },
-          'sass-loader'
-        ]
-      }
-    ]
+          {
+            loader: 'sass-loader',
+          },
+        ],
+      },
+    ],
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
 
   devServer: {
@@ -57,6 +55,6 @@ module.exports = {
     host: 'localhost',
     historyApiFallback: true,
     // respond to 404s with index.html
-    inline: true
-  }
+    inline: true,
+  },
 };

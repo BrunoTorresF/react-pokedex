@@ -1,4 +1,6 @@
-.pokedex-main {
+.pokedex {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  width: 90vw;
+  margin: 0 auto;
 }
