@@ -4,12 +4,12 @@ import PokemonCard from './PokemonCard';
 
 import styles from '../styles/PokemonGrid.scss';
 
-const PokemonGrid = ({ pokemon, isLoading, hasError }) => {
+const PokemonGrid = ({ pokemon, isLoading, isError }) => {
   if (isLoading) {
     return <p>loading...</p>;
   }
 
-  if (hasError) {
+  if (isError) {
     return 'error';
   }
 
