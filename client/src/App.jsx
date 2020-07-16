@@ -1,9 +1,15 @@
 import React from 'react';
 // RHL only for front end development
 import { hot } from 'react-hot-loader';
+import localforage from 'localforage';
 import Header from './components/Header';
 import Pokedex from './containers/Pokedex';
 import './styles/App.scss';
+
+localforage.config({
+  name: 'reactpokedex',
+  storeName: 'pokedex',
+});
 
 const App = () => (
   <>

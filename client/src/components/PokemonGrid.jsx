@@ -34,5 +34,5 @@ PokemonGrid.propTypes = {
     }),
   ),
   isLoading: PropTypes.bool.isRequired,
-  hasError: PropTypes.string.isRequired,
+  isError: PropTypes.bool.isRequired,
 };
