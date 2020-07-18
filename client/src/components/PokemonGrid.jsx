@@ -10,7 +10,7 @@ const PokemonGrid = ({ pokemon, isLoading, isError }) => {
   }
 
   if (isError) {
-    return 'error';
+    return <p>error</p>;
   }
 
   if (pokemon.length) {

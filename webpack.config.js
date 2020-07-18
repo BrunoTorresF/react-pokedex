@@ -56,5 +56,6 @@ module.exports = {
     historyApiFallback: true,
     // respond to 404s with index.html
     inline: true,
+    hot: true,
   },
 };
