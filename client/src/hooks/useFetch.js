@@ -4,7 +4,6 @@ import localforage from 'localforage';
 const getCacheData = async (url) => {
   try {
     const cacheKeys = await localforage.keys();
-    console.log('accessed localforage', cacheKeys);
     const isUrlInCache = cacheKeys.includes(url);
     if (isUrlInCache) {
       const cachedData = await localforage.getItem(url);

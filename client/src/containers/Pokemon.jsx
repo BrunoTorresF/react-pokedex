@@ -12,31 +12,38 @@ const Pokemon = () => {
   );
 
   if (isLoading) {
-    return <p>loading...</p>;
+    return <LoadingSpinner />;
   }
 
   if (isError) {
     return <p>error</p>;
   }
-
+  const {
+    name,
+    order,
+    weight,
+    height,
+    sprites: { front_default: frontDefault },
+    types,
+  } = data;
   return (
     <main className={styles.container}>
-      {isLoading ? (
-        <LoadingSpinner />
-      ) : (
+      <div>
+        <figure>
+          <img src={frontDefault} alt={`${name} sprite`} />
+        </figure>
+        <h1>{name}</h1>
+        <h3>{order}</h3>
         <div>
-          <figure>
-            <img src={data.sprites.front_default} alt={`${data.name} sprite`} />
-          </figure>
-          <h1>{data.name}</h1>
-          <div>
-            <p>{data.weight}</p>
-          </div>
-          <div>
-            <p>{data.height}</p>
-          </div>
+          <p>{weight}</p>
         </div>
-      )}
+        <div>
+          <p>{height}</p>
+        </div>
+        {types.map(({ type, slot }) => (
+          <p key={slot}>{type.name}</p>
+        ))}
+      </div>
     </main>
   );
 };
