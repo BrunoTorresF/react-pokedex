@@ -4,21 +4,25 @@ import PokemonCard from './PokemonCard';
 
 import styles from '../styles/PokemonGrid.scss';
 
-const PokemonGrid = ({ pokemon }) => (
-  // if (isLoading) {
-  //   return <p>loading...</p>;
-  // }
+const PokemonGrid = ({ pokemon, isLoading, isError }) => {
+  if (isLoading) {
+    return <p>loading...</p>;
+  }
 
-  // if (hasError) {
-  //   return 'error';
-  // }
+  if (isError) {
+    return <p>error</p>;
+  }
 
-  <section className={styles.pokedex}>
-    {pokemon.map((poke) => (
-      <PokemonCard name={poke.name} url={poke.url} key={`${poke.name}`} />
-    ))}
-  </section>
-);
+  if (pokemon.length) {
+    return (
+      <section className={styles.pokedex}>
+        {pokemon.map((poke) => (
+          <PokemonCard name={poke.name} url={poke.url} key={`${poke.name}`} />
+        ))}
+      </section>
+    );
+  }
+};
 
 export default PokemonGrid;
 
@@ -29,6 +33,6 @@ PokemonGrid.propTypes = {
       url: PropTypes.string,
     }),
   ),
-  // isLoading: PropTypes.bool.isRequired,
-  // hasError: PropTypes.string.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  isError: PropTypes.bool.isRequired,
 };

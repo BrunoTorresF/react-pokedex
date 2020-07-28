@@ -1,12 +1,14 @@
 /* eslint global-require: 0 */
 
 const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: ['./client/src/Index.js'],
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname, 'client/dist'),
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -46,15 +48,22 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: path.resolve(__dirname, 'client/dist/index.html'),
+    }),
+  ],
   resolve: {
     extensions: ['.js', '.jsx'],
   },
 
   devServer: {
     contentBase: './client/dist',
+    publicPath: '/',
     host: 'localhost',
     historyApiFallback: true,
     // respond to 404s with index.html
     inline: true,
+    hot: true,
   },
 };
