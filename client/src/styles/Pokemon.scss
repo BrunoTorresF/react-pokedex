@@ -5,34 +5,3 @@
   flex-direction: column;
   margin: 0 4rem;
 }
-
-.introduction {
-  display: grid;
-  grid-template-columns: 1fr repeat(4, minmax(320px, 1fr)) 1fr;
-  line-height: 1.5;
-  figure {
-    grid-column: 2;
-    justify-self: center;
-    img {
-      height: 100%;
-    }
-  }
-}
-
-.basic_info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-}
-
-.base_stats {
-  grid-column: 4/6;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-items: center;
-}
-
-.italic {
-  font-style: italic;
-}

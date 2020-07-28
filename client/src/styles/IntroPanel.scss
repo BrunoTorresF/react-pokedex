@@ -1,0 +1,60 @@
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, minmax(320px, 1fr)) 1fr;
+  line-height: 1.5;
+
+  .wrapper {
+    grid-column: 2/6;
+    display: flex;
+    justify-content: space-around;
+  }
+  figure {
+    justify-self: center;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.basic_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  align-items: center;
+
+  h3,
+  span {
+    text-transform: capitalize;
+  }
+}
+
+.base_stats {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  grid-gap: 4px;
+
+  label {
+    text-transform: capitalize;
+
+    &[for='hp'] {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+progress {
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-value {
+  background-color: green;
+}
+
+::-moz-progress-bar {
+  background-color: green;
+}

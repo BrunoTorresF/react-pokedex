@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, minmax(320px, 1fr)) 1fr;
+  line-height: 1.5;
+
+  .wrapper {
+    grid-column: 2/6;
+    display: flex;
+
+    .info {
+      flex: 1;
+      text-align: center;
+    }
+  }
+}
+
+.species {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.breeding {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.spacer {
+  margin-right: 4px;
+}

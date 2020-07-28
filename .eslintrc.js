@@ -27,6 +27,7 @@ module.exports = {
         jsxBracketSameLine: true,
       },
     ],
+    'no-restricted-syntax': 0,
     'no-console': 'off',
     'no-unused-vars': 1,
     strict: ['error', 'global'],
