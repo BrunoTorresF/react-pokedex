@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import styles from '../styles/PokemonCard.scss';
+import styles from '../../styles/PokemonCard.scss';
 
 const PokemonCard = ({ name, url }) => {
   const pokeID = url.match(/\/\d+(?=\/)/)[0].replace('/', '');
@@ -21,12 +21,6 @@ const PokemonCard = ({ name, url }) => {
           </div>
           <div className={styles.subtitle}>
             <span>{`# ${pokeID}`}</span>
-          </div>
-          <div className={styles.details}>
-            <p>
-              Some quick example text to build on the card title and make up the
-              bulk of the card&apos;s content.
-            </p>
           </div>
         </div>
       </Link>

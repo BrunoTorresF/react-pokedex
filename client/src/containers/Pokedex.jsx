@@ -1,8 +1,9 @@
 import React from 'react';
-import PokemonGrid from '../components/PokemonGrid';
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
+import PokemonGrid from '../components/Pokedex/PokemonGrid';
 import useFetch from '../hooks/useFetch';
 import styles from '../styles/Pokedex.scss';
-import LoadingSpinner from '../components/LoadingSpinner';
+import LoadingSpinner from '../components/Shared/LoadingSpinner';
 
 const Pokedex = () => {
   // const [pageOffset, setPageOffset] = useState(0);
@@ -27,14 +28,20 @@ const Pokedex = () => {
       ) : (
         <>
           <nav className={styles.pokenav}>
-            <button type="button" onClick={loadPreviousPokemon}>
-              prev 20
+            <button
+              className={styles.loadBtn}
+              type="button"
+              onClick={loadPreviousPokemon}>
+              <FaArrowAltCircleLeft />
             </button>
             <div className={styles.navText}>
               <span>{`Displaying 20 of ${data.count} pokemon`}</span>
             </div>
-            <button type="button" onClick={loadNextPokemon}>
-              next 20
+            <button
+              className={styles.loadBtn}
+              type="button"
+              onClick={loadNextPokemon}>
+              <FaArrowAltCircleRight />
             </button>
           </nav>
           <PokemonGrid

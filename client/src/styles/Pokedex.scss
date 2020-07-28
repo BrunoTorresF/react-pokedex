@@ -7,8 +7,17 @@
 .pokenav {
   display: flex;
   flex: 1;
+  align-items: center;
 }
 
 .navText {
   margin: 0 1.5rem;
+}
+
+.loadBtn {
+  font-size: 1.5em;
+  border: none;
+  background-color: transparent;
+  line-height: 50%;
+  text-align: center;
 }

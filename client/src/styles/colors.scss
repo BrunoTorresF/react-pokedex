@@ -1,0 +1,115 @@
+$bug-color-light: #c6d16e;
+$bug-color: #a8b820;
+$bug-color-dark: #6d7815;
+$dark-color-light: #a29288;
+$dark-color: #705848;
+$dark-color-dark: #49392f;
+$dragon-color-light: #a27dfa;
+$dragon-color: #7038f8;
+$dragon-color-dark: #4924a1;
+$electric-color-light: #fae078;
+$electric-color: #f8d030;
+$electric-color-dark: #a1871f;
+$fairy-color-light: #f4bdc9;
+$fairy-color: #ee99ac;
+$fairy-color-dark: #9b6470;
+$fighting-color-light: #d67873;
+$fighting-color: #c03028;
+$fighting-color-dark: #7d1f1a;
+$fire-color-light: #f5ac78;
+$fire-color: #f08030;
+$fire-color-dark: #9c531f;
+$flying-color-light: #c6b7f5;
+$flying-color: #a890f0;
+$flying-color-dark: #6d5e9c;
+$ghost-color-light: #a292bc;
+$ghost-color: #705898;
+$ghost-color-dark: #493963;
+$grass-color-light: #a7db8d;
+$grass-color: #78c850;
+$grass-color-dark: #4e8234;
+$ground-color-light: #ebd69d;
+$ground-color: #e0c068;
+$ground-color-dark: #927d44;
+$ice-color-light: #bce6e6;
+$ice-color: #98d8d8;
+$ice-color-dark: #638d8d;
+$normal-color-light: #c6c6a7;
+$normal-color: #a8a878;
+$normal-color-dark: #6d6d4e;
+$poison-color-light: #c183c1;
+$poison-color: #a040a0;
+$poison-color-dark: #682a68;
+$psychic-color-light: #fa92b2;
+$psychic-color: #f85888;
+$psychic-color-dark: #a13959;
+$rock-color-light: #d1c17d;
+$rock-color: #b8a038;
+$rock-color-dark: #786824;
+$steel-color-light: #d1d1e0;
+$steel-color: #b8b8d0;
+$steel-color-dark: #787887;
+$water-color-light: #9db7f5;
+$water-color: #6890f0;
+$water-color-dark: #445e9c;
+$unknown-color-light: #9dc1b7;
+$unknown-color: #68a090;
+$unknown-color-dark: #44685e;
+
+.bug {
+  background-color: $bug-color;
+}
+.dark {
+  background-color: $dark-color;
+}
+.dragon {
+  background-color: $dragon-color;
+}
+.electric {
+  background-color: $electric-color;
+}
+.fairy {
+  background-color: $fairy-color;
+}
+.fighting {
+  background-color: $fighting-color;
+}
+.fire {
+  background-color: $fire-color;
+}
+.flying {
+  background-color: $flying-color;
+}
+.ground {
+  background-color: $ground-color;
+}
+.ghost {
+  background-color: $ghost-color;
+}
+.grass {
+  background-color: $grass-color;
+}
+.ice {
+  background-color: $ice-color;
+}
+.normal {
+  background-color: $normal-color;
+}
+.poison {
+  background-color: $poison-color;
+}
+.psychic {
+  background-color: $psychic-color;
+}
+.rock {
+  background-color: $rock-color;
+}
+.steel {
+  background-color: $steel-color;
+}
+.water {
+  background-color: $water-color;
+}
+.unknown {
+  background-color: $unknown-color;
+}

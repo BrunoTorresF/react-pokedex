@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from '../styles/Header.scss';
+import { Link } from 'react-router-dom';
+import styles from '../../styles/Header.scss';
 
 const Header = () => (
   <header className={styles.headerContainer}>
@@ -8,9 +9,11 @@ const Header = () => (
       className={styles.headerImg}
       src="https://purepng.com/public/uploads/medium/purepng.com-pokeballpokeballdevicepokemon-ballpokemon-capture-ball-1701527825789aht1d.png"
     />
-    <div className={styles.headerBanner}>
-      <h1>Pokedex SPA</h1>
-    </div>
+    <Link to="/">
+      <div className={styles.headerBanner}>
+        <h1>Pokedex SPA</h1>
+      </div>
+    </Link>
   </header>
 );
 
