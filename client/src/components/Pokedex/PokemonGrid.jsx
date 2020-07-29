@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PokemonCard from './PokemonCard';
-import styles from '../../styles/PokemonGrid.scss';
+import styles from './PokemonGrid.module.scss';
 
 const PokemonGrid = ({ pokemon, isLoading, isError }) => {
   if (isLoading) {

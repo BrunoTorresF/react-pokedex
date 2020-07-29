@@ -3,6 +3,8 @@ import 'regenerator-runtime/runtime';
 import React from 'react';
 import { render } from 'react-dom';
 import App from './App';
-import './styles/index.scss';
+import './styles/index.module.scss';
 
-render(<App />, document.getElementById('app'));
+const root = document.getElementById('app');
+
+render(<App />, root);

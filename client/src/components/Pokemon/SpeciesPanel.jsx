@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../Shared/LoadingSpinner';
 import useFetch from '../../hooks/useFetch';
-import styles from '../../styles/SpeciesPanel.scss';
+import styles from './SpeciesPanel.module.scss';
 
 const SpeciesPanel = ({ id }) => {
   const [{ isLoading, isError, data }] = useFetch(

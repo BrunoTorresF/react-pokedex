@@ -1,0 +1,16 @@
+.layout {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'sidebar content content content'
+    'sidebar content content content';
+}
+
+main {
+  grid-area: content;
+}
+
+.pokedex-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

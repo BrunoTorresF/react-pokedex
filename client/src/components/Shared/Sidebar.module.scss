@@ -1,0 +1,35 @@
+@use '../../styles/colors.module.scss' as *;
+
+.sidebar {
+  grid-area: sidebar;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 11vh;
+  background-color: $pokeblue;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+
+  .nav_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

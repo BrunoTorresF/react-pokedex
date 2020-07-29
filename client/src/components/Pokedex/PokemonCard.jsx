@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import styles from '../../styles/PokemonCard.scss';
+import styles from './PokemonCard.module.scss';
 
 const PokemonCard = ({ name, url }) => {
   const pokeID = url.match(/\/\d+(?=\/)/)[0].replace('/', '');

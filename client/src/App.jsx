@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Shared/Header';
 import Pokedex from './containers/Pokedex';
 import Pokemon from './containers/Pokemon';
-import './styles/App.scss';
+import styles from './styles/App.module.scss';
+import Sidebar from './components/Shared/Sidebar';
 
 localforage.config({
   name: 'reactpokedex',
@@ -15,8 +16,9 @@ localforage.config({
 
 const App = () => (
   <Router>
-    <>
+    <div className={styles.layout}>
       <Header />
+      <Sidebar />
       <Switch>
         <Route path="/pokedex/:id">
           <Pokemon />
@@ -25,7 +27,7 @@ const App = () => (
           <Pokedex />
         </Route>
       </Switch>
-    </>
+    </div>
   </Router>
 );
 // hot export works with RHL. Remove line 11 when starting fullstack integration

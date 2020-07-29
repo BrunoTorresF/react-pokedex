@@ -2,7 +2,7 @@ import React from 'react';
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 import PokemonGrid from '../components/Pokedex/PokemonGrid';
 import useFetch from '../hooks/useFetch';
-import styles from '../styles/Pokedex.scss';
+import styles from './Pokedex.module.scss';
 import LoadingSpinner from '../components/Shared/LoadingSpinner';
 
 const Pokedex = () => {

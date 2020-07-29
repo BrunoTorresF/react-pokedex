@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import useFetch from '../../hooks/useFetch';
 import LoadingSpinner from '../Shared/LoadingSpinner';
-import styles from '../../styles/IntroPanel.scss';
+import styles from './IntroPanel.module.scss';
 
 const IntroPanel = ({ id }) => {
   const [{ isLoading, isError, data }] = useFetch(
